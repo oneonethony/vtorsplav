@@ -1,11 +1,278 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ВТОРСПЛАВ</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+    <style>
+        .bg {
+            background: url(media/background.jpg) no-repeat top center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 6% 0 6%;
+        }
+
+        .navbar-brand {
+            font-size: 30pt;
+            font-weight: 700;
+            background: linear-gradient(45deg, orangered 17%, gold 33%, orangered 66%, gold);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: gold;
+        }
+
+        .nav-link {
+            padding: 0 0 2px 0;
+            margin-right: 10px;
+            font-size: 12pt;
+            font-weight: 500;
+            color: white;
+        }
+
+        .nav-link:hover,
+        .navbar-nav li.active>a {
+            color: gold;
+        }
+
+        .custom-toggler {
+            border-color: rgb(255, 69, 0);
+
+            margin-left: 85%;
+            margin-top: 28px;
+        }
+
+        .hr-head {
+            background: linear-gradient(to right, red, yellow);
+            height: 1px;
+            margin-top: 0;
+        }
+
+        .head-content {
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.767) 29%) 50% 0 / 78% 50%,
+                linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.767) 20%) 50% 100% / 78% 50%,
+                linear-gradient(to left, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.767) 80%) 100% 58% / 11% 66%,
+                linear-gradient(to right, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.767) 80%) 0 58% / 11% 66%,
+                radial-gradient(at 100% 100%, rgba(0, 0, 0, 0.767) 19%, rgba(0, 0, 0, 0) 70%) 3% 0% / 8.2% 19.6%,
+                radial-gradient(at 0% 0%, rgba(0, 0, 0, 0.767) 19%, rgba(0, 0, 0, 0) 70%) 97% 101% / 8.2% 15%,
+                radial-gradient(at 100% 0%, rgba(0, 0, 0, 0.767) 19%, rgba(0, 0, 0, 0) 70%) 3% 101% / 8.2% 15%,
+                radial-gradient(at 0% 100%, rgba(0, 0, 0, 0.767) 19%, rgba(0, 0, 0, 0) 70%) 97% 0% / 8.2% 19.6%;
+
+            background-repeat: no-repeat;
+
+            margin-top: 150px;
+            padding: 120px;
+        }
+
+        a:hover {
+            color: orangered;
+        }
+    </style>
 </head>
+
 <body>
-    <p>Привет мир!</p>
+    <div class="bg">
+        <nav class="navbar navbar-expand-xl">
+            <div class="col-xl-3">
+                <a class="navbar-brand mr-5" href="#">АО ВТОРСПЛАВ</a>
+            </div>
+            <button class="navbar-toggler mr-3 custom-toggler btn-right fixed-top" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars" style="color: orangered; font-size:28px;"></i>
+            </button>
+
+            <div class="col-xl-6 pt-3">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto pt-2">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О&nbsp;компании </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Продукция </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Покупателям </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Поставщикам </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="col-xl-3 pl-xl-5 mb-3 mb-xl-0">
+                <div class="container px-0 mt-3 mt-xl-0 ml-0 ml-xl-5" style="width: 220px;">
+                    <button type="button" class="btn btn-warning"><i class="fas fa-phone-volume fa-lg"></i>
+                        Заказать
+                        звонок</button>
+
+                    <div class="dropdown">
+                        <button class="btn btn-warning" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-globe fa-lg"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">RU</a>
+                            <a class="dropdown-item" href="#">ENG</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <hr class="hr-head ">
+
+        <div class="container text-center text-light head-content">
+            <h1 class="text-uppercase" style="font-size: 56pt; font-weight: 700;">ВТОРСПЛАВ к вашим услугам!</h1>
+            <hr class="my-4" style="height: 2px; border-color: white;">
+            <div class="lead">Мы готовы выполнить заказы любой сложности</div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <h1>НАША ПРОДУКЦИЯ</h1>
+        <div class="row">
+            <div class="col-lg-4 pt-5 text-center">
+                <img src="media/aluminium.jpg" alt="aluminium" style="height: 200px;">
+                <p style="font-size: 20pt;">Алюминий и алюминиевые сплавы</p>
+            </div>
+            <div class="col-lg-4 pt-5 text-center">
+                <img src="media/aluminium.jpg" alt="aluminium" style="height: 200px; filter: sepia(100);">
+                <p style="font-size: 20pt;">Лигатуры</p>
+            </div>
+            <div class="col-lg-4 pt-5 text-center">
+                <img src="media/aluminium.jpg" alt="aluminium"
+                    style="height: 200px; filter: invert(1); filter: hue-rotate(120deg);">
+                <p style="font-size: 20pt;">Цинк и цинковые сплавы</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 pt-5 pr-xl-5 text-center text-md-right">
+                <img src="media/aluminium.jpg" alt="aluminium" style="height: 200px;  filter: contrast(160%);">
+                <p style="font-size: 20pt;">Сплавы на медной основе</p>
+            </div>
+            <div class="col-md-6 pt-5 pl-xl-5 text-center text-md-left">
+                <img src="media/aluminium.jpg" alt="aluminium" style="height: 200px; filter: hue-rotate(180deg);">
+                <p class="pr-5" style="font-size: 20pt;">Свинцовые сплавы и баббиты</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background: rgb(226, 226, 226);">
+        <div class="container py-5">
+            <h1>МЫ ПОКУПАЕМ</h1>
+            <br>
+            <p style="font-size: 20pt;">АО "ВТОРСПЛАВ" приобретает лом цветных металлов и отходы производства:</p>
+            <ul style="font-size: 20pt; padding-top: 10px;">
+                <li>Алюминий, шлак алюминиевый, стружка алюминиевая;</li>
+                <li>Латунь, стружка латунная;</li>
+                <li>Бронза, стружка бронзовая;</li>
+                <li>Цинк, ЦАМ, стружка цинковая, шлак цинковый;</li>
+                <li>Быстрорезы, никельсодержащие и др.</li>
+            </ul>
+
+            <div class="text-right" style="font-size: 18pt;"><a href="#">Перейти в раздел --></a></div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <h1>НАШИ ПРЕИМУЩЕСТВА</h1>
+        <ul style="font-size: 20pt; padding-top: 15px;">
+            <li>Мы готовы взяться за заказ <span style="color: orangered;">абсолютно любой</span> сложности и объёма;
+            </li>
+            <li>Четверть века на рынке (работаем с <span style="color: orangered;">1994 года</span>);</li>
+            <li>Наша компания соответствует <span style="color: orangered;">международным стандартам качества</span>
+                ГОСТ ISO 9001-2011;</li>
+            <li>Сотрудничаем с ведущими компаниями <span style="color: orangered;">по всему миру</span>;</li>
+            <li>Изготавливаем сплавы по предварительному заказу в <span style="color: orangered;">короткие сроки</span>;
+            </li>
+            <li>Осуществляем <span style="color: orangered;">доставку</span> до заказчика;</li>
+            <li>Контроль технологического процесса и качества выпускаемой продукции в <span
+                    style="color: orangered;">собственной лаборатории</span> на основе спектрального анализа;</li>
+            <li>При заказе от 2-х тонн <span style="color: orangered;">банка алюминиевых огурцов в подарок!</span></li>
+        </ul>
+    </div>
+
+    <div class="container-fluid" style="background: rgb(175, 175, 175);">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p class="text-right" style="font-size: 19pt;"><i class="far fa-copyright"></i>1994-2020 АО "Вторсплав"</p>
+                    <div class="text-right">
+                        432023, г. Ульяновск, ул. Профсоюзная, д. 68, Офис 1
+                        <br>
+                        sekretar@vtorsplav.ru
+                        <br>
+                        <a href="tel:+7422361092">+7 (422) 36-10-92</a>
+                    </div>
+                </div>
+                <div class="col-sm-4 pl-5">
+                    <p style="font-size: 19pt;">Каталог продукции</p>
+                    <div style="text-decoration: underline;">
+                        Алюминий и алюминиевые сплавы
+                        <br>
+                        Лигатуры
+                        <br>
+                        Цинк и цинковые сплавы
+                        <br>
+                        Сплавы на медной основе
+                        <br>
+                        Свинцовые сплавы и баббиты
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <p style="font-size: 19pt;">Меню сайта</p>
+                    <div style="text-decoration: underline;">
+                        Главная
+                        <br>
+                        О компании
+                        <br>
+                        Продукция
+                        <br>
+                        Покупателям
+                        <br>
+                        Поставщикам
+                        <br>
+                        Контакты
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
