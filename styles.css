@@ -1,0 +1,109 @@
+.bg {
+    background: url(media/bg.JPG) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 6% 10px 6%;
+}
+
+.logo {
+    font-size: 30pt;
+    font-weight: 800;
+    background: linear-gradient(45deg, rgb(167, 166, 166) 17%, rgb(255, 255, 255) 33%, rgb(165, 165, 165) 66%, rgb(255, 255, 255) 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: lightgrey;
+    -webkit-text-stroke: .04em rgba(0, 0, 0, 0.5);
+}
+
+a.logo:hover {
+    text-decoration: none;
+}
+
+.nav {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-link {
+    font-size: 12pt;
+    font-weight: 500;
+    color: white;
+    padding-right: 60px !important;
+}
+
+.nav-link:hover,
+.nav li.active>a {
+    color: lightsteelblue;
+}
+
+.custom-toggler {
+    border-color: rgb(255, 69, 0);
+
+    margin-left: 85%;
+    margin-top: 28px;
+}
+
+.hr-head {
+    background: linear-gradient(to right, grey, lightgrey);
+    height: 1px;
+    margin: 0;
+}
+
+.head-content {
+    margin-top: 0px;
+    padding: 90px;
+}
+
+.transparentback {
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 140%;
+    font-weight: bold;
+}
+
+.headlinks>a {
+    color: white;
+}
+
+.left-image {
+    float: left;
+    height: 400px;
+    margin: 5px 20px 0px 0px;
+}
+
+.btext {
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer-head {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.footer-cat {
+    text-decoration: underline;
+    color: rgb(156, 156, 156);
+}
+
+.list-header {
+    font-weight: 500 !important;
+}
+
+.col1 {
+    width: 200px;
+}
+.col2 {
+    width: 250px;
+}
+
+.active-link {
+    text-decoration: underline;
+    color: blue;
+}
