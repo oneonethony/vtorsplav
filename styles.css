@@ -67,6 +67,10 @@ a.logo:hover {
     font-weight: bold;
 }
 
+.headlinks {
+    float: right;
+}
+
 .headlinks>a {
     color: white;
 }
@@ -97,13 +101,39 @@ a.logo:hover {
 }
 
 .col1 {
-    width: 200px;
+    width: 220px;
 }
 .col2 {
-    width: 250px;
+    width: 240px;
 }
 
 .active-link {
     text-decoration: underline;
-    color: blue;
+    font-weight: bold;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.product_menu h5 {
+    text-align: center;
+}
+
+.product_menu > .card:hover > .card-header{
+    background-color: #6c757d;
+}
+
+.product_menu > .card:hover .btn {
+    color: white;
+}
+
+button:active, button:focus {
+    outline: none !important;
+    box-shadow: unset !important;
+}
+button::-moz-focus-inner {
+   border: 0 !important;
 }

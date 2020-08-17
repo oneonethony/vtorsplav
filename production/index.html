@@ -85,48 +85,48 @@
         <br>
         <div class="row">
             <div class="col-4">
-                <div class="accordion" id="accordionExample">
+                <div class="accordion product_menu" id="accordionExample">
                     <div class="card">
-                        <div class="card-header" id="headingOne">
+                        <div class="card-header bg-dark" id="heading1">
                             <h5 class="mb-0">
-                                <button class="btn list-header" type="button" data-toggle="collapse"
+                                <button class="btn text-white list-header" type="button" data-toggle="collapse"
                                     data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     Алюминий и алюминиевые сплавы
                                 </button>
                             </h5>
                         </div>
 
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        <div id="collapseOne" class="collapse show" aria-labelledby="heading1"
                             data-parent="#accordionExample">
                             <div class="card-body">
 
                                 <ol>
-                                    <a href="" id="link1">
+                                    <span id="link1_1" class="active-link">
                                         <li>Алюминиевые литейные сплавы ГОСТ 1583-93</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Алюминиевые сплавы для производства профилей ГОСТ 30620-97</li>
-                                    </a>
-                                    <a href="">
+                                    </span>
+                                    <span id="link1_2">
+                                        <li>Алюминиевые сплавы для производства поршней ГОСТ 30620-97</li>
+                                    </span>
+                                    <span id="link1_3">
                                         <li>Алюминиевые деформируемые сплавы ГОСТ 4784-97</li>
-                                    </a>
-                                    <a href="">
+                                    </span>
+                                    <span id="link1_4">
                                         <li>Алюминий для раскисления и алюмотермии ГОСТ 295-98</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Алюминиевые фнтифрикционные сплавы ГОСТ 14113-78</li>
-                                    </a>
-                                    <a href="">
+                                    </span>
+                                    <span id="link1_5">
+                                        <li>Алюминиевые антифрикционные сплавы ГОСТ 14113-78</li>
+                                    </span>
+                                    <span id="link1_6">
                                         <li>Другие алюминиевые сплавы</li>
-                                    </a>
+                                    </span>
                                 </ol>
                             </div>
 
 
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo">
+                    <div class="card ">
+                        <div class="card-header" id="heading2">
                             <h5 class="mb-0">
                                 <button class="btn list-header collapsed" type="button" data-toggle="collapse"
                                     data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -136,20 +136,13 @@
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                             data-parent="#accordionExample">
-                            <div class="card-body">
-                                <ol>
-                                    <a href="">
-                                        <li>Алюминиевые лигатуры ГОСТ 53777-2010 DIN EN 575:1995-09</li>
-                                    </a>
-                                    <a href="">
-                                        <li>Лигатуры на медной основе</li>
-                                    </a>
-                                </ol>
+                            <div class="card-body p-0">
+
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingThree">
+                        <div class="card-header" id="heading3">
                             <h5 class="mb-0">
                                 <button class="btn list-header collapsed" type="button" data-toggle="collapse"
                                     data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -165,11 +158,11 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header" id="headingFour">
+                        <div class="card-header" id="heading4">
                             <h5 class="mb-0">
                                 <button class="btn list-header collapsed" type="button" data-toggle="collapse"
                                     data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    Сплавы на меедной основе
+                                    Сплавы на медной основе
                                 </button>
                             </h5>
                         </div>
@@ -182,7 +175,7 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-header" id="headingFive">
+                        <div class="card-header" id="heading5">
                             <h5 class="mb-0">
                                 <button class="btn list-header collapsed" type="button" data-toggle="collapse"
                                     data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -200,54 +193,266 @@
                 </div>
             </div>
             <div class="col">
-                <h3>Алюминиевые литейные сплавы ГОСТ 1583-93</h3>
+                <h3 id="header1_1">Алюминиевые литейные сплавы ГОСТ 1583-93</h3>
+                <h3 id="header1_2" class="hidden">Алюминиевые сплавы для производства поршней ГОСТ 30620-97</h3>
+                <h3 id="header1_3" class="hidden">Алюминиевые деформируемые сплавы ГОСТ 4784-97</h3>
+                <h3 id="header1_4" class="hidden">Алюминий для раскисления и алюмотермии ГОСТ 295-98</h3>
+                <h3 id="header1_5" class="hidden">Алюминиевые антифрикционные сплавы ГОСТ 14113-78</h3>
+                <h3 id="header1_6" class="hidden">Другие алюминиевые сплавы</h3>
+                <h3 id="header2_1" class="hidden">Лигатуры</h3>
                 <hr style="border: 1px solid black;">
-                <table class="table table-striped">
+                <table id="tb1_1" class="table table-striped">
                     <col class="col1">
                     <col class="col2">
                     <thead class="thead-dark">
 
                         <tr>
-                            <th scope="col">Группа сплава</th>
-                            <th scope="col">Марки</th>
-                            <th scope="col">Примечание</th>
+                            <th scope="col" style="text-align: center;">Группа сплава</th>
+                            <th scope="col" style="text-align: center;">Марки</th>
+                            <th scope="col" style="text-align: center;">Примечание</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Al-Si</td>
                             <td>АК12оч, АК12пч, АК12ч, АК13, АК12, АК12п, АК12ж</td>
-                            <td></td>
+                            <td rowspan="7" style="text-align: center; vertical-align: middle;">Чушка вес 6-8 кг <br>
+                                Чушка вес 10-12 кг </td>
                         </tr>
                         <tr>
                             <td>Al-Si-Mg</td>
                             <td>АК9пч, АК9ч, АК9с, АК9п, АК9, АК8л, АК7пч, АК7ч, АК7п, АК7, АК10Су</td>
-                            <td></td>
+
                         </tr>
                         <tr>
                             <td>Al-Si-Cu</td>
                             <td>АК5Мч, АК5М, АК5М2, АК5М2п, АК5М7, АК6М2, АК8М, АК5М4, АК8М3ч, АК8М3, АК9М2, АК12М2</td>
-                            <td></td>
+
                         </tr>
                         <tr>
                             <td>Al-Si-Cu-Mg-Ni</td>
                             <td>АК12ММгН, АК12М2МгН, АК21М2.5Н2.5</td>
-                            <td></td>
+
                         </tr>
                         <tr>
                             <td>Al-Cu</td>
                             <td>АМ5 (АЛ19), АМ4.5Кд (ВАЛ10)</td>
-                            <td></td>
+
                         </tr>
                         <tr>
                             <td>Al-Mg</td>
                             <td>АМг5К, АМг5Мц, АМг6л, АМг10, АМг10ч, АМг11</td>
-                            <td></td>
+
                         </tr>
                         <tr>
                             <td>Al-Si-Zn</td>
                             <td>АК7Ц9 (АЛ11), АК9Ц6</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="tb1_2" class="table table-striped hidden">
+                    <col class="col1">
+                    <col class="col2">
+                    <thead class="thead-dark">
+
+                        <tr>
+                            <th scope="col">Марка сплава</th>
+                            <th scope="col">Примечание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>КС740</td>
                             <td></td>
+                        </tr>
+                        <tr>
+                            <td>КС741</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>АК18</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>ЖЛС</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>АК10М2Н</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="tb1_3" class="table table-striped hidden">
+                    <col class="col1">
+                    <col class="col2">
+                    <thead class="thead-dark">
+
+                        <tr>
+                            <th scope="col">Марка сплава</th>
+                            <th scope="col">Примечание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>АМг5</td>
+                            <td rowspan="9" style="vertical-align: middle;">Чушка вес 6-8 кг <br> Чушка вес 10-12 кг
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>АМг2</td>
+
+                        </tr>
+                        <tr>
+                            <td>АД31</td>
+
+                        </tr>
+                        <tr>
+                            <td>АД33</td>
+
+                        </tr>
+                        <tr>
+                            <td>АД35</td>
+
+                        </tr>
+                        <tr>
+                            <td>8011</td>
+
+                        </tr>
+                        <tr>
+                            <td>1105</td>
+
+                        </tr>
+                        <tr>
+                            <td>3104</td>
+
+                        </tr>
+                        <tr>
+                            <td>Д16 (EN2024)</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="tb1_4" class="table table-striped hidden">
+                    <col class="col1">
+                    <col class="col2">
+                    <thead class="thead-dark">
+
+                        <tr>
+                            <th scope="col">Марка сплава</th>
+                            <th scope="col">Примечание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>АВ97</td>
+                            <td rowspan="3" style="vertical-align: middle;">Чушка вес 6-8 кг <br> Чушка вес 10-12 кг
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>АВ91</td>
+
+                        </tr>
+                        <tr>
+                            <td>АВ87</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="tb1_5" class="table table-striped hidden">
+                    <col class="col1">
+                    <col class="col2">
+                    <thead class="thead-dark">
+
+                        <tr>
+                            <th scope="col">Марка сплава</th>
+                            <th scope="col">Примечание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>АО9-2</td>
+                            <td rowspan="6" style="vertical-align: middle;">Чушка вес 6-8 кг <br> Чушка вес 10-12 кг
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>АО3-7</td>
+
+                        </tr>
+                        <tr>
+                            <td>АО9-1</td>
+
+                        </tr>
+                        <tr>
+                            <td>АО20-1</td>
+
+                        </tr>
+                        <tr>
+                            <td>АМ-2.5</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="tb1_6" class="table table-striped hidden">
+                    <col class="col1">
+                    <col class="col2">
+                    <thead class="thead-dark">
+
+                        <tr>
+                            <th scope="col">Наименование</th>
+                            <th scope="col">Марки</th>
+                            <th scope="col">Примечание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" style="vertical-align: middle;">Первичный алюминий ГОСТ 11069-2001</td>
+                            <td>А8, А7, А7Е</td>
+                            <td>Производство РУСАЛ <br> Чушка вес 16-20 кг</td>
+                        </tr>
+                        <tr>
+
+                            <td>А6, А5, А35, А0</td>
+                            <td rowspan="2" style="vertical-align: middle;">Чушка вес 6-8 кг <br> Чушка вес 10-12 кг
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Протекторные алюминиевые сплавы</td>
+                            <td>АП1, АП2, АП3, АП4</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="tb2_1" class="table table-striped hidden">
+                    <col class="col1">
+                    <col class="col2">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Наименование</th>
+                            <th scope="col">Марка по стандарту</th>
+                            <th scope="col">Примечание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align: middle;">Алюминиевые лигатуры ГОСТ 53777-2010 DIN EN575:1995-09</td>
+                            <td>AlBi3, AlCo10, AlCz5, AlCz10, AlCu33, AlFe10, AlFe20, AlMg10, AlMn10, AlNi10, AlNi20,
+                                AlSi20, AlTi5, AlTi5B1, AlV5, AlV10, AlZr2.5, AlZr5, AlNi20Cu10, AlNi20Cz5, AlBe5,
+                                AlSn50</td>
+                            <td style="vertical-align: middle;">Вафельный слиток 10-12 кг <br> Чушка вес 10-12 кг</td>
+                        </tr>
+                        <tr>
+
+                            <td>Лигатуры на медной основе</td>
+                            <td>CuAl15, CuFe10, CuNi30, CuNi50, CuMn30</td>
+                            <td>Вафельный слиток 25 кг<br> Чушка вес 25-30 кг </td>
                         </tr>
                     </tbody>
                 </table>
@@ -312,10 +517,37 @@
         crossorigin="anonymous"></script>
 
     <script type="text/javascript">
+
         $(function () {
             $('#link1').addClass('active-link');
         });
-        
+
+        $(".product_menu").find(".card-header").click(function () {
+            $(".product_menu").find(".card-header").removeClass("bg-dark");
+            $(this).addClass('bg-dark');
+
+            $(".product_menu").find(".btn").removeClass("text-white");
+            $(this).find(".btn").addClass('text-white');
+
+            $(".product_menu").find("span").removeClass('active-link');
+            $("#link" + $(this).attr("id")[$(this).attr("id").length - 1] + "_1").addClass("active-link");
+            
+            $("table").hide();
+            $("h3").hide();
+            $("#tb" + $(this).attr("id")[$(this).attr("id").length - 1] + "_1").show();
+            $("#header" + $(this).attr("id")[$(this).attr("id").length - 1] + "_1").show();
+        });
+
+        $(".product_menu").find("span").click(function () {
+            $(".product_menu").find("span").removeClass('active-link');
+            $(this).addClass('active-link');
+
+            $("table").hide();
+            $("h3").hide();
+            $("#tb" + $(this).attr("id").slice($(this).attr("id").length - 3)).show();
+            $("#header" + $(this).attr("id").slice($(this).attr("id").length - 3)).show();
+        });
+
     </script>
 </body>
 
