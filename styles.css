@@ -19,7 +19,11 @@ a.logo:hover {
     text-decoration: none;
 }
 
-.nav {
+.toggle-menu-button {
+    display: none;
+}
+
+.top-menu-panel {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -28,6 +32,7 @@ a.logo:hover {
     font-weight: 500;
     color: white;
     padding-right: 60px !important;
+    padding-left: 40px !important;
 }
 
 .nav-link:hover,
@@ -49,12 +54,7 @@ a.logo:hover {
 }
 
 .head-subcontent {
-    margin-top: 7%;
-    -webkit-text-stroke: .1em rgba(0, 0, 0, 0.7);
     background: rgba(0, 0, 0, 0.5);
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
     border: 2px solid lightgrey;
     border-radius: 15px;
 }
@@ -87,11 +87,18 @@ a.logo:hover {
     color: white;
 }
 
-
-
 .btext {
     font-weight: bold;
-    font-size: 18pt;
+}
+
+.footer a {
+    color: #828a91;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 .footer-head {
@@ -99,10 +106,6 @@ a.logo:hover {
     font-weight: bold;
 }
 
-.footer-cat {
-    text-decoration: underline;
-    color: rgb(156, 156, 156);
-}
 
 .list-header {
     font-weight: 500 !important;
@@ -181,7 +184,7 @@ button::-moz-focus-inner {
     transform: scale(1.05);
 }
 
-.contacts .col-5 {
+.contacts-img {
     overflow: hidden;
     border-top-left-radius: 0.3em;
     border-bottom-left-radius: 0.3em;
@@ -190,7 +193,7 @@ button::-moz-focus-inner {
     border-bottom: 1px solid black;
 }
 
-.contacts .col-7{
+.contacts-text{
     border-top-right-radius: 0.3em;
     border-bottom-right-radius: 0.3em;
     border-top: 1px solid black;
@@ -198,12 +201,11 @@ button::-moz-focus-inner {
     border-bottom: 1px solid black;
 }
 
-.contacts .col-7>div {
+.contacts-text>div {
     border-top-right-radius: 0.3em;
     border-bottom-right-radius: 0.3em;
     height: 99%;
     margin: 5px;
-    font-size: 15pt;
     border: 1px solid rgba(0, 0, 0, 0.4);
     padding: 20px;
 
@@ -211,5 +213,4 @@ button::-moz-focus-inner {
 
 .contacts-panel {
     text-align: center;
-    font-size: 16pt;
 }

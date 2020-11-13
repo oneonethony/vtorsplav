@@ -6,16 +6,16 @@ $bg_img = "../media/about_bg.jpg";
 include '../header.php';
 ?>
 
-<div class="container py-5">
+<div id="text-resize" class="container py-5" style="font-size: 18pt;">
     <h1 class="text-center mb-5">АО "Вторсплав"</h1>
     <div class="card mb-3">
         <div class="row no-gutters">
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <img src="../media/about.jpg" class="card-img" alt="...">
             </div>
-            <div class="col-md-6">
+            <div class="col-lg-6">
                 <div class="card-body">
-                    <p class="card-text text-right" style="font-size: 18pt;"><b>История компании начинается в 1994г.</b>, когда было основано предприятие «Вторсплав», занимающееся сбором,
+                    <p class="card-text text-lg-right"><b>История компании начинается в 1994г.</b>, когда было основано предприятие «Вторсплав», занимающееся сбором,
                         сортировкой, реализацией лома и отходов цветных металлов.</p>
                 </div>
             </div>
@@ -24,26 +24,26 @@ include '../header.php';
 
     <div class="card mb-3">
         <div class="row no-gutters">
-            <div class="col-md-8">
+            <div class="col-lg-8">
                 <div class="card-body">
-                    <p class="card-text" style="font-size: 18pt;"><b>В 1998г. было принято решение об организации литейного участка по переработке алюминиевого сырья</b>, а в 2000
+                    <p class="card-text"><b>В 1998г. было принято решение об организации литейного участка по переработке алюминиевого сырья</b>, а в 2000
                         году был запущен первый плавильный комплекс на базе итальянской двухкамерной отражательной печи.</p>
-                    <p class="card-text" style="font-size: 18pt;">В настоящее время АО «Вторсплав» г.Ульяновск – многопрофильное металлургическое предприятие, имеющее в своем
+                    <p class="card-text">В настоящее время АО «Вторсплав» г.Ульяновск – многопрофильное металлургическое предприятие, имеющее в своем
                         оснащении различные типы современного плавильного оборудования , высокотехнологичные сортировочные и
                         подготовительные линии, а так же современное аналитическое оборудование, которое позволяет контролировать
                         химический состав , проводить металлографические исследования и контролировать физические свойства продукта.</p>
                 </div>
 
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <img src="../media/about2.jpg" class="card-img" alt="...">
             </div>
         </div>
     </div>
     <div class="p-4 about-content">
-        <p style="font-size: 18pt;">На сегодняшний день деятельность предприятия развивается в следующих основных направлениях:</p>
+        <p>На сегодняшний день деятельность предприятия развивается в следующих основных направлениях:</p>
 
-        <ul style="font-size: 18pt;">
+        <ul>
             <li>Производство и реализация алюминиевых сплавов</li>
             <li>Производство и реализация лигатур на алюминиевой основе и на основе других цветных металлов</li>
             <li>Производство и реализация различных сплавов на основе цветных металлов</li>
@@ -51,7 +51,7 @@ include '../header.php';
         </ul>
 
         <br>
-        <p style="font-size: 18pt;">Производственные мощности АО «Вторсплав» составляют 15 тыс. тонн в год.</p>
+        <p>Производственные мощности АО «Вторсплав» составляют 15 тыс. тонн в год.</p>
     </div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -80,9 +80,9 @@ include '../header.php';
         </a>
     </div>
     <br>
-    <p style="font-size: 18pt;">На предприятии производятся алюминиевые сплавы высокого качества и любой сложности Потребителям как на
+    <p>На предприятии производятся алюминиевые сплавы высокого качества и любой сложности Потребителям как на
         внутренний рынок, так и на экспорт.</p>
-    <p style="font-size: 18pt;">АО Вторсплав располагает высококвалифицированными специалистами, которые обладают
+    <p>АО Вторсплав располагает высококвалифицированными специалистами, которые обладают
         большими опытом и знаниями в технологическом процессе производства продукции. Управление компанией
         осуществляется командой, которая была сформирована еще при создании предприятия и практически не изменилась
         до настоящего времени. Решения принимаются исключительно самостоятельно и в короткие сроки. За это время
@@ -97,9 +97,15 @@ include '../footer.php'
 
 ?>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script>
+    $(window).on('load resize', function() {
+        if ($(window).width() > '1182') {
+            $('#text-resize').css('font-size', '18pt')
+        } else {
+            $('#text-resize').css('font-size', '14pt')
+        }
+    })
+</script>
 
 </body>
 

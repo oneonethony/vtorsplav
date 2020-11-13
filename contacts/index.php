@@ -6,14 +6,14 @@ $bg_img = "../media/contacts_bg.jpg";
 include '../header.php';
 
 ?>
-<div class="container py-5">
+<div id="text-resize" class="container py-5">
     <h1 class="text-center">Связаться с нами</h1>
     <br>
     <div class="row contacts">
-        <div class="col-5 p-0">
-            <img src="../media/contacts_1.jpg" alt="" width="100%">
+        <div id="cont-img" class="col-lg-5 p-0 contacts-img">
+            <img id="contact_img" src="../media/contacts_1.jpg" alt="" width="100%">
         </div>
-        <div class="col-7 p-0">
+        <div id="cont-text" class="col-lg-7 p-0 contacts-text">
             <div>
                 <p class="btext">Адрес:</p>
                 <p>Юридический адрес: Россия, 432023, г. Ульяновск, ул. Профсоюзная, д. 68, Офис 1</p>
@@ -104,7 +104,7 @@ include '../header.php';
                 }
                 ?>
                 <button type="submit" class="btn btn-primary">Отправить</button>
-                
+
             </form>
 
         </div>
@@ -116,10 +116,28 @@ include '../header.php';
 include '../footer.php'
 
 ?>
+<script>
+    $(window).on('load resize', function() {
+        if ($(window).width() > '1182') {
+            $('#text-resize').css('font-size', '16pt')
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        } else {
+            $('#text-resize').css('font-size', '13pt')
+
+        }
+
+        if ($(window).width() > '974') {
+            $('img').attr('src', '../media/contacts_1.jpg')
+
+            $('#cont-text').removeClass('contacts-img')
+            $('#cont-img').addClass('contacts-img')
+        } else {
+            $('img').attr('src', '')
+            $('#cont-text').addClass('contacts-img')
+            $('#cont-img').removeClass('contacts-img')
+        }
+    })
+</script>
 </body>
 
 </html>

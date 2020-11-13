@@ -10,7 +10,7 @@ include '../header.php';
     <h1 class="text-center mb-5">Мы производим</h1>
     <br>
     <div class="row">
-        <div class="col-4">
+        <div class="col-12 col-md-4 mb-5">
             <div class="accordion product_menu" id="accordionExample">
                 <div class="card">
                     <div class="card-header bg-dark" id="heading1">
@@ -486,9 +486,6 @@ include '../header.php';
 include '../footer.php'
 
 ?>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
     $(".product_menu").find(".card-header").click(function() {
@@ -532,6 +529,15 @@ include '../footer.php'
                     } ?>).trigger("click");
 
     });
+</script>
+<script>
+    $(window).on('load resize', function() {
+        if ($(window).width() > '1182') {
+            $('.contacts-panel').css('font-size', '18pt')
+        } else {
+            $('.contacts-panel').css('font-size', '14pt')
+        }
+    })
 </script>
 </body>
 
